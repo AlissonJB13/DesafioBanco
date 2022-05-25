@@ -5,8 +5,8 @@ public class Principal {
 	public static void main(String[] args) {
 		//colocando valores na conta poupança
 		contaPoupanca cp = new contaPoupanca();
-		Cliente c1 = new Cliente();
-		c1.setNomeCliente("Alisson");
+		Cliente c1 = new Cliente.clienteBuilder("Alisson").criarCliente();
+		//c1.setNomeCliente("Alisson");
 		cp.setClienteConta(c1);
 		cp.setIdConta("1");
 		cp.setSaldoConta(0.0);
